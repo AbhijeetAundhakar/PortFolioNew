@@ -540,6 +540,15 @@ footer p {
     font-weight: bold;
 }
 
+.content .haveQuestion button{
+    padding: 15px 30px;
+    border-radius: 30px;
+    border: none;
+    background-color:  rgb(255, 175, 14);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+
 
 
 .social-icons {
