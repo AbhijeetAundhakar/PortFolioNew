@@ -364,10 +364,11 @@ footer p {
     }
 }
 
-@media (max-width: 400px) {
-    .offcanvas {
-        width: 80%;
-      }
+
+@media (max-width: 768px) {
+    .offcanvas-end {
+        width: 70% !important;
+    }
 }
 
 
