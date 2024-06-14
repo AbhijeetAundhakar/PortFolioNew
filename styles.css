@@ -1,15 +1,16 @@
 html {
     scroll-behavior: smooth;
     font-family: 'Times New Roman', Times, serif;
-    }
-    
-    body {
+}
+
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    background-color: #121212; /* Dark background color */
+    color: #fff; /* Light text color */
 }
-
 
 
 header {
@@ -24,20 +25,25 @@ header {
 ---------------- */
 
 
-/* nav ul li {
+nav ul li {
     display: inline;
     margin: 0 20px;
     font-size: 1.5rem;
     font-family: 'Times New Roman', Times, serif;
-} */
-
-.container-fluid :first-child{
-    /* background-color: red; */
-    font-size: 1.7rem;
 }
 
+header nav .navbar-brand{
+    font-size: 2rem;
+}
 
-/* CONTENT */
+nav ul li a:hover {
+    color: #007bff;
+}
+
+nav ul li a.active {
+    color: #007bff; /* Example: Blue color for the active link */
+}
+
 
 .section {
     padding: 0px 0;
@@ -47,6 +53,7 @@ header {
     max-width: 1200px;
     margin: auto;
     text-align: center;
+    /* border: 3px solid red; */
 }
 
 .content h1{
@@ -158,7 +165,12 @@ header {
     transform: scale(1.05);
 }
 
-
+@media (max-width: 768px) {
+    .experience-box {
+        width: 100%; /* Full width boxes on smaller screens */
+        margin-bottom: 20px;
+    }
+}
 /* from here new animation code */
 
 .animated {
@@ -205,14 +217,6 @@ header {
     }
 }
 
-
-
-
-/* PROJECTS SECTION */
-#projects .content .card{
-    background-color: #1d1d1d;
-    color: #fff;
-}
 
 /* from here new animation code */
 
@@ -308,8 +312,15 @@ footer p {
     border-radius: 50px;
 }
 
+#contact .content div a{
+    text-decoration: none;
+    font-size: 2rem;
+}
 
-
+#contact .content div a div{
+    font-size: 1.5rem;
+    color: #fff;
+}
 
 @media (max-width: 1050px) {
         .profile-image {
@@ -336,7 +347,6 @@ footer p {
         margin: 0 10px;
     }
 }
-
 
 @media (max-width: 768px) {
     .experience-box {
@@ -457,9 +467,9 @@ footer p {
     flex-wrap: wrap;
     justify-content: center; /* Center content horizontally */
     align-items: center;
-    /* border: 2px solid red; */
     max-width: 90%;
-    margin: 5rem auto;
+    /* border: 2px solid red; */
+    margin: 80px auto;
 }
 
 .about-home-content {
@@ -524,13 +534,13 @@ footer p {
 /* Styling for the contact section */
 .info-icons {
     text-align: center; /* Center align everything within the container */
-    padding: 20px 0; /* Add padding above and below the icon list */
+    padding: 20px 0; 
     /* border: 2px solid red; */
     margin-bottom: 30px;
 }
 
 .info-icons a {
-    margin: 50px; /* Increase space around each link for better separation */
+    margin: 80px; /* Increase space around each link for better separation */
     display: inline-block; /* Display links inline-block for horizontal layout */
     vertical-align: top; /* Align icons at the top */
     text-align: center; /* Center text and images within each link */
@@ -566,18 +576,6 @@ footer p {
     font-size: 2rem;
     letter-spacing: 4px;
 }
-
-#contact .content .info-icons div{
-    text-decoration: none;
-    font-size: 1.5rem;
-    color: #fff;
-}
-
-#contact .content .info-icons a{
-    text-decoration: none;
-    margin: 70px;
-}
-
 
 .content .contactText{
     letter-spacing: 4px;
@@ -618,4 +616,9 @@ footer p {
 .content .projectText{
     letter-spacing: 4px;
     font-weight: bold;
+}
+
+#projects .content .card{
+    background-color: #1d1d1d;
+    color: #fff;
 }
