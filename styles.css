@@ -158,12 +158,7 @@ header {
     transform: scale(1.05);
 }
 
-@media (max-width: 768px) {
-    .experience-box {
-        width: 100%; /* Full width boxes on smaller screens */
-        margin-bottom: 20px;
-    }
-}
+
 /* from here new animation code */
 
 .animated {
@@ -314,6 +309,8 @@ footer p {
 }
 
 
+
+
 @media (max-width: 1050px) {
         .profile-image {
             width: 300px;
@@ -339,6 +336,7 @@ footer p {
         margin: 0 10px;
     }
 }
+
 
 @media (max-width: 768px) {
     .experience-box {
