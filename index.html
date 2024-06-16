@@ -22,7 +22,6 @@
             /* Adjust color as needed */
             transition: .3s;
         }
-
     </style>
 </head>
 
@@ -75,8 +74,8 @@
     <section class="abouthome" id="abouthome">
         <div class="about-home-content">
             <h1 class="animated">I'm <br>Abhijeet Aundhakar</h1>
-            <button class="aboutHomeButton" onclick="redirectToLinkedIn()">LinkedIn</button>
-            <button class="aboutHomeButton" onclick="redirectToGithub()">My Work</button>
+            <button class="aboutHomeButton" id="linkedInButton" onclick="redirectToLinkedIn()">LinkedIn</button>
+            <button class="aboutHomeButton" id="githubButton" onclick="redirectToGithub()">My Work</button>
         </div>
         <div class="about-home-image">
             <img src="./images/Abhijeet.jpg" alt="Our Team">
@@ -134,7 +133,7 @@
 
 
 
-    <section id="resume" class="section">
+    <section id="resumeExp" class="section">
         <div class="content">
             <h1 class="resume">Resume</h1>
             <h2>Experience</h2>
@@ -232,7 +231,7 @@
                             <p class="card-text">Streamline healthcare with our Android app: buy meds, book
                                 appointments, access health articles—powered by Java, XML, and Firebase for seamless
                                 functionality.</p>
-                            <img src="./projectsImages/healthCare.png" class="card-img-bottom" alt="...">
+                            <img src="./projectsImages/healthcare.jpg" class="card-img-bottom" alt="...">
                             <a href="https://github.com/AbhijeetAundhakar/HealthCare"
                                 class="btn btn-primary my-1">Checkout</a>
                         </div>
@@ -246,7 +245,7 @@
                             <p class="card-text">Discover our Alcohol Addiction Website offering vital resources and
                                 personalized support for those battling alcohol dependency, through an intuitive
                                 interface.</p>
-                            <img src="./projectsImages/healthCare.png" class="card-img-bottom" alt="...">
+                            <img src="./projectsImages/addiction.jpg" class="card-img-bottom" alt="...">
                             <a href="https://github.com/AbhijeetAundhakar/alcohol_addiction"
                                 class="btn btn-primary my-1">Checkout</a>
                         </div>
@@ -259,13 +258,13 @@
                             <h3 class="card-title">Doctor Appointment Booking</h3>
                             <p class="card-text">BookDoc lets you easily schedule doctor appointments, browse profiles,
                                 and book in a few clicks, with health articles.</p>
-                            <img src="./projectsImages/healthCare.png" class="card-img-bottom" alt="...">
+                            <img src="./projectsImages/appoinementBooking.jpg" class="card-img-bottom" alt="...">
                             <a href="https://github.com/AbhijeetAundhakar/doctor_appointment_bookingg"
                                 class="btn btn-primary my-1">Checkout</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 my-4">
+                <div class="col-sm-6 my-4 m-auto">
                     <div class="card">
                         <div class="card-body">
                             <h3 class="card-title">Learning Center UI</h3>
@@ -282,6 +281,84 @@
         </div>
     </section>
     <br><br><br>
+
+    <section id="certificates" class="section">
+        <div class="content">
+            <h1 class="certificateText">Certificates</h1>
+            <br>
+            <div class="row content m-auto">
+                <div class="col-sm-6 mb-3 mb-sm-0 my-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Alpha DSA with Java</h3>
+                            <p class="card-text">
+                                Completed the Alpha DSA with Java program, data structures and algorithms in Java from Apna College.</p>
+                            <img src="./certificates/alphaDSA.png" class="card-img-bottom" alt="Certificate 1">
+                            <!-- <a href="certificate_link_1" class="btn btn-primary my-1">View Certificate</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 my-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Intern - Full Stack Web Developer</h3>
+                            <p class="card-text">Completed an internship as a Full Stack Web Developer at Edureka, enhancing skills in front-end and back-end development..</p>
+                            <img src="./certificates/FullStackWebDeveloper-Intern.jpg" class="card-img-bottom"
+                                alt="Certificate 2">
+                            <!-- <a href="certificate_link_2" class="btn btn-primary my-1">View Certificate</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 my-4 m-auto">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">SQL Essential Certificate Program</h3>
+                            <p class="card-text">Completed the SQL Essential Certificate Program at Edureka, gaining expertise in SQL database management.</p>
+                            <img src="./certificates/SQLEssentialCertificateProgram.jpg" class="card-img-bottom"
+                                alt="Certificate 2">
+                            <a href="https://drive.google.com/drive/folders/1ePlbx7w37_dO4e28kLzlFHS0fsORKn02?usp=sharing" class="btn btn-primary my-1">View More Certificate</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-sm-6 my-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Java/C++</h3>
+                            <p class="card-text">Completed an offline Java/C++ course at Media Industrial Training Center, acquiring proficiency in Java and C++ programming languages..</p>
+                            <img src="./certificates/Java-C++.jpg" class="card-img-bottom"
+                                alt="Certificate 2">
+                            <a href="certificate_link_2" class="btn btn-primary my-1">View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 my-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Python for data science</h3>
+                            <p class="card-text">
+                                Attended Python for Data Science at IBM and earned a certificate.</p>
+                            <img src="./certificates/python.png" class="card-img-bottom"
+                                alt="Certificate 2">
+                            <a href="certificate_link_2" class="btn btn-primary my-1">View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 my-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Internship</h3>
+                            <p class="card-text">
+                                Completed a 10-day internship at Khechari Technologies Pvt Ltd.</p>
+                            <img src="./certificates/InternshipCertificates.jpg" class="card-img-bottom"
+                                alt="Certificate 2">
+                            <a href="certificate_link_2" class="btn btn-primary my-1">View Certificate</a>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
 
 
 
