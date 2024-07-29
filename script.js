@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     var sections = document.querySelectorAll('.section');
     var navLinks = document.querySelectorAll('nav ul li a');
+    var navLinks2 = document.querySelectorAll('.offcanvas .offcanvas-body ul li a');
     var animatedSections = document.querySelectorAll('.about, .experience, #projects .row, #projects .card, .info-icons, .haveQuestion, .social-icons, #certificates .row, #certificates .card');
 
     window.addEventListener('scroll', function () {
@@ -14,7 +15,14 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
 
-        navLinks.forEach(function (link) {
+        // navLinks.forEach(function (link) {
+        //     link.classList.remove('active');
+        //     if (link.getAttribute('href').slice(1) === currentSection) {
+        //         link.classList.add('active');
+        //     }
+        // });
+
+        navLinks2.forEach(function (link) {
             link.classList.remove('active');
             if (link.getAttribute('href').slice(1) === currentSection) {
                 link.classList.add('active');

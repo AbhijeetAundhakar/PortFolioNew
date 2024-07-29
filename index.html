@@ -13,14 +13,18 @@
 
     <style>
         /* Custom styles for the drawer icon */
-        .navbar-toggler-icon {
+        /* .navbar-toggler-icon {
             background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-        }
+        } */
 
         .navbar-nav .nav-item .nav-link.active {
             border-bottom: 2px solid #007bff;
             /* Adjust color as needed */
             transition: .3s;
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
         }
     </style>
 </head>
@@ -28,14 +32,13 @@
 <body style="background-color: rgb(0, 0, 0);color: #fff;">
 
 
-    <header>
+    <!-- <header>
         <nav class="navbar navbar-dark bg-dark fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Abhijeet A.</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
                     aria-label="Toggle navigation">
-                    <!-- <span class="navbar-toggler-icon"></span>   -->
                     <span class="material-symbols-outlined">menu</span>
                 </button>
                 <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
@@ -67,10 +70,100 @@
                 </div>
             </div>
         </nav>
+    </header> -->
+
+    <header>
+        <nav class="navbar navbar-expand-lg mt-1 bg-dark navbar-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Abhijeet A.</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-none d-lg-block" id="navbarNav">
+                    <ul class="navbar-nav ms-auto me-4">
+                        <li class="nav-item  mx-4">
+                            <a class="nav-link" aria-current="page" href="#abouthome">Home</a>
+                        </li>
+                        <li class="nav-item mx-4">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item mx-4">
+                            <a class="nav-link" href="#resume">Resume</a>
+                        </li>
+                        <li class="nav-item mx-4">
+                            <a class="nav-link" href="#projects">Project</a>
+                        </li>
+                        <li class="nav-item mx-4">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <!-- <li class="nav-item dropdown mx-5">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+        <div class="offcanvas offcanvas-end bg-dark text-light" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">About me</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#abouthome">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resume">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex mt-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form> -->
+            </div>
+        </div>
     </header>
-
-
-
+    
+    
+    
     <section class="abouthome" id="abouthome">
         <div class="about-home-content">
             <h1 class="animated">I'm <br>Abhijeet Aundhakar</h1>
@@ -81,12 +174,12 @@
             <img src="./images/Abhijeet.jpg" alt="Our Team">
         </div>
     </section>
-
-
-
-
-
-
+    
+    
+    
+    
+    
+    
     <section id="about" class="section">
         <div class="content">
             <div class="contentpage">
@@ -98,10 +191,10 @@
             </div>
         </div>
     </section>
-
-
-
-
+    
+    
+    
+    
     <section class="about" id="about">
         <div class="about-image">
             <img src="./images/Abhijeet.jpg" alt="Our Team">
@@ -130,9 +223,9 @@
             <button class="aboutButton" onclick="redirectToLinkedIn()">LinkedIn</button>
         </div>
     </section>
-
-
-
+    
+    
+    
     <section id="resumeExp" class="section">
         <div class="content">
             <h1 class="resume">Resume</h1>
@@ -152,7 +245,7 @@
                             user experience.</li>
                     </ul>
                 </div>
-
+    
                 <div class="experience-box">
                     <h3>Aug - Sept 2023</h3>
                     <p><strong>Position:</strong> Full Stack Web Developer</p>
@@ -173,8 +266,8 @@
             </div>
         </div>
     </section>
-
-
+    
+    
     <section id="resume" class="section">
         <div class="content">
             <h2 class="educationText">Education</h2>
@@ -189,7 +282,7 @@
                         <li class="liList">Grade : 6.2 CGPA</li>
                     </ul>
                 </div>
-
+    
                 <div class="experience-box">
                     <h3>2021 - 2024</h3>
                     <p><strong>Bachelor of Engineering</strong></p>
@@ -204,7 +297,7 @@
             <a href="Abhijeet_A_Resume.pdf" download class="button">Download Resume</a>
         </div>
     </section>
-
+    
     <br>
     <br>
     <section id="projects" class="section">
@@ -237,7 +330,7 @@
                         </div>
                     </div>
                 </div>
-
+    
                 <div class="col-sm-6 mb-3 mb-sm-0 my-4">
                     <div class="card">
                         <div class="card-body">
@@ -251,7 +344,7 @@
                         </div>
                     </div>
                 </div>
-
+    
                 <div class="col-sm-6 mb-3 mb-sm-0 my-4">
                     <div class="card">
                         <div class="card-body">
@@ -277,11 +370,11 @@
                     </div>
                 </div>
             </div>
-
+    
         </div>
     </section>
     <br><br><br>
-
+    
     <section id="certificates" class="section">
         <div class="content">
             <h1 class="certificateText">Certificates</h1>
@@ -320,48 +413,13 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="col-sm-6 my-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h3 class="card-title">Java/C++</h3>
-                            <p class="card-text">Completed an offline Java/C++ course at Media Industrial Training Center, acquiring proficiency in Java and C++ programming languages..</p>
-                            <img src="./certificates/Java-C++.jpg" class="card-img-bottom"
-                                alt="Certificate 2">
-                            <a href="certificate_link_2" class="btn btn-primary my-1">View Certificate</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 my-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h3 class="card-title">Python for data science</h3>
-                            <p class="card-text">
-                                Attended Python for Data Science at IBM and earned a certificate.</p>
-                            <img src="./certificates/python.png" class="card-img-bottom"
-                                alt="Certificate 2">
-                            <a href="certificate_link_2" class="btn btn-primary my-1">View Certificate</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 my-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h3 class="card-title">Internship</h3>
-                            <p class="card-text">
-                                Completed a 10-day internship at Khechari Technologies Pvt Ltd.</p>
-                            <img src="./certificates/InternshipCertificates.jpg" class="card-img-bottom"
-                                alt="Certificate 2">
-                            <a href="certificate_link_2" class="btn btn-primary my-1">View Certificate</a>
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </div>
     </section>
-
-
-
-
+    
+    
+    
+    
     <section id="contact" class="section">
         <div class="content">
             <h1 class="contactText">Contact Me</h1>
@@ -384,7 +442,7 @@
                     <div>Resume</div>
                 </a>
             </div>
-
+    
             <div class="haveQuestion">
                 <span>Have a question ? </span>
                 <a
@@ -392,7 +450,7 @@
                     <Button>CLICK HERE</Button>
                 </a>
             </div>
-
+    
             <span>Find me on </span>
             <div class="social-icons" style="margin-bottom: 100px;">
                 <a href="http://linkedin.com/in/abhijeet-aundhakar-986393200/" target="_blank">
@@ -410,11 +468,11 @@
             </div>
         </div>
     </section>
-
-
-
-
-
+    
+    
+    
+    
+    
     <footer>
         <p>&copy; 2024 Your Portfolio. All rights reserved.</p>
     </footer>
