@@ -24,6 +24,10 @@ header {
 -----HEADER---------
 ---------------- */
 
+.offcanvas .offcanvas-body ul li a{
+    padding-left: 30px;
+}
+
 
 nav ul li {
     display: inline;
