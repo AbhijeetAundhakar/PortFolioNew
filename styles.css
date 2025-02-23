@@ -175,6 +175,22 @@ nav ul li a.active {
     text-decoration: none;
 }
 
+
+#projectButton {
+    display: inline-block;
+    width: auto;
+    margin: 20px auto;
+    padding: 5px 25px;
+    /* More padding for a better button */
+    background-color: rgb(255, 189, 57);
+    color: #000000;
+    font-size: 1.7rem;
+    border-radius: 50px;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
 .button:hover {
     background-color:  rgb(255, 175, 14);
     transform: scale(1.05);

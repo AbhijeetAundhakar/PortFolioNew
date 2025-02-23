@@ -47,12 +47,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let linkedInButton = document.querySelector('.aboutButton');
     linkedInButton.addEventListener('click', function () {
-        window.open('https://www.linkedin.com/in/abhijeet-aundhakar-986393200/', '_blank');
+        window.open('https://www.linkedin.com/in/abhijeet-aundhakar/', '_blank');
     });
    
     let linkedInButtonHome = document.querySelector('#linkedInButton');
     linkedInButtonHome.addEventListener('click', function () {
-        window.open('https://www.linkedin.com/in/abhijeet-aundhakar-986393200/', '_blank');
+        window.open('https://www.linkedin.com/in/abhijeet-aundhakar/', '_blank');
+    });
+   
+
+    let projectButton = document.querySelector('#projectButton');
+    projectButton.addEventListener('click', function () {
+        window.open('https://github.com/AbhijeetAundhakar', '_blank');
     });
 
     let githubButtonHome = document.querySelector('#githubButton');
